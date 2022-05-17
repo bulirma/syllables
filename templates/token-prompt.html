@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/elems-dark.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		<link rel="stylesheet" href="/css/credentials-form.css">
+		<title>Syllables</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>Token prompt</h1>
+		</header>
+		<main class="main">
+			<form action="/registration" method="GET" id="credentials-form">
+				<div class="row">
+					<div class="left"><label for="token">Token:</label></div>
+					<div class="right"><input name="token" type="text"></div>
+				</div>
+				<div>
+					<input type="submit" value="Register" id="submit-btn">
+				</div>
+			</form>
+			{{ if .ErrorMessage }}
+			<div class="error-msg-box">{{ .ErrorMessage }}</div>
+			{{ end }}
+		</main>
+		<footer class="footer">
+			<a href="https://github.com/bulirma/schedule" class="btn">
+				<img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub repository" width="32" height="32" style="vertical-align:text-bottom">
+			</a>
+		</footer>
+	</body>
+</html>

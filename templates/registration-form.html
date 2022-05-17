@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/elems-dark.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		<link rel="stylesheet" href="/css/credentials-form.css">
+		<title>Syllables</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>Registration</h1>
+		</header>
+		<main class="main">
+			<form action="/registration" method="post" id="credentials-form">
+				<input type="hidden" name="token" value="{{ .Token }}">
+				<div class="row">
+					<div class="left"><label for="username">Username:</label></div>
+					<div class="right"><input name="username" type="text" value="{{ .Username }}"></div>
+				</div>
+				<div class="row">
+					<div class="left"><label for="password">Password:</label></div>
+					<div class="right"><input name="password" type="password"></div>
+				</div>
+				<div class="row">
+					<div class="left"><label for="password_confirm">Retype password:</label></div>
+					<div class="right"><input name="password_confirm" type="password"></div>
+				</div>
+				<div>
+					<input type="submit" value="Register" id="submit-btn">
+				</div>
+			</form>
+			{{ if .ErrorMessage }}
+			<div class="error-msg-box">{{ .ErrorMessage }}</div>
+			{{ end }}
+		</main>
+		<footer class="footer">
+			<a href="https://github.com/bulirma/schedule" class="btn">
+				<img src="/images/GitHub-Mark-Light-32px.png" alt="GitHub repository" width="32" height="32" style="vertical-align:text-bottom">
+			</a>
+		</footer>
+	</body>
+</html>

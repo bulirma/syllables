@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+        margin: 0px;
+        padding: 0px;
+}
+
+html {
+        height: 100vh;
+}
+
+body {
+	color: #e8e8e8;
+	background-color: #141211;
+	font-family: sans-serif;
+}
+
+button, input[type="button"], input[type="submit"] {
+	display: inline-block;
+	border: 3px solid transparent;
+	padding: 6px 12px;
+	color: #161815;
+	background-color: #32ba2f;
+}
+
+input[type="button"], input[type="submit"] {
+	background-color: #3584e4;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover { 
+	cursor: pointer;
+	border-color: #1a8b12;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover { 
+	border-color: #2372d2;
+}
+
+
+button:disabled:hover {
+	cursor: not-allowed;
+	border-color: transparent;
+}
+
+button:active, input[type="button"]:active, input[type="submit"]:active {
+	background-color: #1a8b12;
+}
+
+input[type="button"]:active, input[type="submit"]:active {
+	background-color: #2372d2;
+}
+
+a {
+	color: #32ba2f;
+}
+
+a:visited {
+	color: #62e960;
+}
+
+a:hover, a:visited:hover {
+	color: #ebdc5a;
+}
+
+pre, code {
+	font-family: Consolas, monospace;
+	font-size: 14px;
+	color: #f8f8f8;
+	background-color: #444341;
+}
+
+pre {
+	display: block;
+	margin: 0px 10px;
+	padding: 10px;
+	box-shadow: -5px 0px 0px 0px #32ba2f;
+	overflow: scroll;
+}
+
+code {
+	padding: 2px 4px;
+	white-space: nowrap;
+}
+
+pre code {
+	white-space: pre;
+}
+
+input[type="text"], input[type="number"], input[type="password"], select, textarea {
+	color: #f8f8f8;
+	background-color: #444341;
+	border: 2px solid #000000;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none !important;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield !important;
+}
+
+input:disabled, textarea:disabled {
+	background-color: #888888;
+	color: #444341;
+}
+
+input:disabled:hover, textarea:disabled:hover {
+	cursor: not-allowed;
+}
+
+input:focus, textarea:focus {
+	outline: 1px solid #ebdc5a;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.3em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: .9em;
+}
